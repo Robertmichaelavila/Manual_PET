@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+:root{
+    --cor-primary: #0D0D0D;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    background-color: #000000;
+}
+
+nav{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+nav > div{
+    display: flex;
+    color: #04B2D9;
+}
+
+nav > div > p{
+    margin-top: 15px;
+}
+
+nav > menu{
+    margin-top: 15px;
+    padding-right: 10px;
+}
+
+nav > menu > a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 10px;
+}
+
+nav > div> img{
+    padding-left: 20px;
+    width: 50px;
+}
+
+section.carrousel > img{
+    width: 100%;
+    height: 600px;
+}
+
+section.noticias{
+    color: #04B2D9;
+    margin-bottom: 30px;
+}
+
+section.noticias > h2{
+    margin: 20px;
+}
+
+section.atualizacoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+section.atualizacoes > div{
+    color: #fff;
+    width: 180px;
+    height: 130px;
+    margin: 0px 40px;
+    background-color: #04B2D9;
+}
+
+section.atualizacoes > div > p{
+    margin: auto;
+}
+
+section.informacoes{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
+
+section.informacoes > div{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #04B2D9;
+}
+
+section.informacoes > div > h3{
+    padding: 20px;
+}
+
+section.indicacoes{
+    color: #04B2D9;
+    margin: 20px 0px;
+}
+
+section.indicacoes > h2{
+    margin: 20px;
+}
+
+section.depoimentos{
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section.depoimentos > div{
+    width: 200px;
+    height: 300px;
+    background-color: #04B2D9;
+}
+
+section.equipe{
+    color: #04B2D9;
+}
+
+section.membros{
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section.equipe > h2{
+    margin: 20px;
+}
+
+section.membros > div{
+    width: 200px;
+    height: 300px;
+    background-color: #04B2D9;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: #04B2D9;
+}
+
+footer > p{
+    text-align: center;
+}
