@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual do Estudante</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./_css/style.css">
+    <link rel="stylesheet" href="./_css/style-swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <nav>
         <div>
-            <img src="logo.jpeg" alt="">
+            <img src="./_css/style.css" alt="">
             <p><span>PET</span> ITAPAJE</p>
         </div>
         <menu>
@@ -20,9 +21,23 @@
         </menu>
     </nav>
 
-    <section class="carrousel">
-        <img src="foto_pet.jpeg" alt="">
-    </section>
+      <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="foto_pet.jpeg" alt="" class="slide"></div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
     <section class="noticias">
         <h2>Notícias e Atualizações</h2>
@@ -30,7 +45,7 @@
             <ul>
                 <li>
                     <div>
-                        
+                        <img src="UFC.png" alt="">
                         <p>Atualizações</p>
                     </div>
                 </li>
@@ -53,6 +68,10 @@
 
     </section>
 
+    <section>
+        
+    </section>
+
     <footer>
         <ul>
             <li><a href="">FAQ </a></li>
@@ -60,10 +79,27 @@
             <li><a href="">Download</a></li>
             <li><a href="">Redes Sociais</a></li>
         </ul>
-        <figure>
-            <img width="50" height="50" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/>
-        </figure>
         <p>&copy;UFC - PET</p>
     </footer>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>

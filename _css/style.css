@@ -217,8 +217,16 @@ footer > ul > li{
 }
 
 footer > ul > li > a{
+    font-size: 1em;
+    font-weight: 300;
     color: #fff;
     text-decoration: none;
+}
+
+footer > ul > li > a:hover{
+    color: #04B2D9;
+    font-weight: 500;
+    transition-duration: .2s;
 }
 
 footer > p{
