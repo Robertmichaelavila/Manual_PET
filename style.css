@@ -26,13 +26,19 @@ nav{
     justify-content: space-between;
 }
 
+nav span{
+    color: #04B2D9;
+}
+
 nav > div{
     display: flex;
     color: #ffffff;
 }
 
 nav > div > p{
-    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 13px;
 }
 
 nav > menu{
@@ -41,9 +47,17 @@ nav > menu{
 }
 
 nav > menu > a{
+    font-size: 1.1em;
+    font-weight: 500;
     text-decoration: none;
     color: #fff;
     margin: 0px 10px;
+}
+
+nav > menu > a:hover{
+    color: #04B2D9;
+    font-weight: 00;
+    transition-duration: .2s;
 }
 
 nav > div> img{
@@ -70,17 +84,18 @@ section.noticias{
 }
 
 section.noticias > h2{
+    font-weight: 700;
     margin: 20px;
 }
 
-section.atualizacoes{
+div.carrousel-atualizacoes{
     display: flex;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 40px;
 }
 
-section.atualizacoes > div{
+div.carrousel-atualizacoes > div{
     color: #000000;
     width: 180px;
     height: 150px;
@@ -91,52 +106,66 @@ section.atualizacoes > div{
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.493);
 }
 
-section.atualizacoes > div > img{
+div.carrousel-atualizacoes > div > img{
     width: 120px;
 }
 
-section.atualizacoes > div > p{
+div.carrousel-atualizacoes > div > p{
     margin: auto;
 }
 
 section.informacoes{
-    display: flex;
     color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    align-self: center;
     justify-content: center;
+
+    display: grid;
+    gap: 40px;
+
+    grid-template-columns: 200px 200px 200px 200px;
 }
 
-section.informacoes > div{
-    margin: auto;
-    width: 200px;
-    text-align: center;
+.informacoes > div{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
+    cursor: pointer;
     background-color: var(--cor-secundary);
 }
 
-section.informacoes > div > h3{
-    padding: 20px;
+.informacoes > div:hover{
+    background-color: #000;
+    color: #04B2D9;
+    transition-duration: .2s;
+}
+
+.noticias .informacoes  div  p{
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 15px;
 }
 
 section.indicacoes{
     color: #000000;
-    margin-top: 20px 0px;
     background-color: var(--cor-secundary);
 }
 
 section.indicacoes > h2{
     color: #ffffff;
     text-align: center;
-    padding-top: 20px;
-    margin-bottom: 10px;
 }
 
-section.depoimentos{
+div.carrousel-depoimentos{
     color: #fff;
     display: flex;
     justify-content: space-evenly;
 }
 
-section.depoimentos > div{
+div.carrousel-depoimentos > div{
     width: 220px;
     height: 300px;
     margin: 20px;
@@ -148,7 +177,7 @@ section.depoimentos > div{
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.493);
 }
 
-section.depoimentos > div > p{
+div.carrousel-depoimentos > div > p{
     text-align: justify;
 }
 
@@ -156,17 +185,17 @@ section.equipe{
     color: #000000;
 }
 
-section.membros{
+section.equipe > h2{
+    margin: 20px;
+}
+
+div.carrousel-membros{
     color: #fff;
     display: flex;
     justify-content: space-evenly;
 }
 
-section.equipe > h2{
-    margin: 20px;
-}
-
-section.membros > div{
+div.carrousel-membros > div{
     width: 200px;
     height: 300px;
     background-color: #04B2D9;
@@ -174,7 +203,8 @@ section.membros > div{
 
 footer{
     margin-top: 20px;
-    background-color: var(--cor-terciary);
+    background-color: #000;
+    color: #fff;
 }
 
 footer > ul{
@@ -187,11 +217,17 @@ footer > ul > li{
 }
 
 footer > ul > li > a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
 footer > p{
     text-align: center;
     padding: 5px;
+}
+
+@media screen and (max-width: 900px){
+    section.informacoes{
+
+    }
 }
