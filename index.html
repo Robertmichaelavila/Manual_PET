@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./_css/style.css">
     <link rel="stylesheet" href="./_css/style-swiper.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <nav>
         <div>
-            <img src="./_css/style.css" alt="">
+            <img src="./_imagens/logo.jpeg" alt="">
             <p><span>PET</span> ITAPAJE</p>
         </div>
         <menu>
@@ -24,7 +25,7 @@
       <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="foto_pet.jpeg" alt="" class="slide"></div>
+      <div class="swiper-slide"><img src="./_imagens/foto_pet.jpeg" alt="" class="slide"></div>
       <div class="swiper-slide">Slide 2</div>
       <div class="swiper-slide">Slide 3</div>
       <div class="swiper-slide">Slide 4</div>
@@ -40,17 +41,33 @@
   </div>
 
     <section class="noticias">
-        <h2>Notícias e Atualizações</h2>
-        <div class="carrousel-atualizacoes">
-            <ul>
-                <li>
-                    <div>
-                        <img src="UFC.png" alt="">
-                        <p>Atualizações</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <h1>Notícias e Atualizações</h1>
+        <section class="atualizacao">
+            <div>
+                <img src="./_imagens/UFC.png" alt="">
+                <p>Projetos</p>
+            </div>
+            <div>
+                <img src="./_imagens/UFC.png" alt="">
+                <p>Projetos</p>
+            </div>
+            <div>
+                <img src="./_imagens/UFC.png" alt="">
+                <p>Projetos</p>
+            </div>
+            <div>
+                <img src="./_imagens/UFC.png" alt="">
+                <p>Projetos</p>
+            </div>
+            <div>
+                <img src="./_imagens/UFC.png" alt="">
+                <p>Projetos</p>
+            </div>
+            <div>
+                <img src="./_imagens/UFC.png" alt="">
+                <p>Projetos</p>
+            </div>
+        </section>
         <section class="informacoes">
             <div>
                 <p>Cursos</p>
@@ -65,12 +82,44 @@
                 <p>Horas</p>
             </div>
         </section>
-
     </section>
 
-    <section>
-        
+    <section class="equipe">
+        <h1>Equipe PET</h1>
+        <section class="membros">
+            <div class="card">
+                <figure><img src="./_imagens/Adriel Bastos.jpeg" alt=""></figure>
+                <h3>Aluno</h3>
+                <p>Missão</p>
+            </div>
+            <div class="card">
+                <figure><img src="./_imagens/Alekyne Ribeiro.jpeg" alt=""></figure>
+                <h3>Aluno</h3>
+                <p>Missão</p>
+            </div>
+            <div class="card">
+                <figure><img src="./_imagens/Aryely Matos.jpeg" alt=""></figure>
+                <h3>Aluno</h3>
+                <p>Missão</p>
+            </div>
+            <div class="card">           
+                <figure><img src="./_imagens/Bianca Sousa.jpeg" alt=""></figure>
+                <h3>Aluno</h3>
+                <p>Missão</p>
+            </div>
+            <div class="card">
+                <figure><img src="./_imagens/Cauã Brandão.jpeg" alt=""></figure>
+                <h3>Aluno</h3>
+                <p>Missão</p>
+            </div>
+            <div class="card">
+                <figure><img src="./_imagens/Cauã Gomes.jpeg" alt=""></figure>
+                <h3>Aluno</h3>
+                <p>Missão</p>
+            </div>
+        </section>
     </section>
+    
 
     <footer>
         <ul>
@@ -81,10 +130,6 @@
         </ul>
         <p>&copy;UFC - PET</p>
     </footer>
-
-    <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
