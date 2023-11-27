@@ -20,6 +20,9 @@ html,body{
     font-family: var(--font-family);
 }
 
+span{
+    color: #04B2D9;
+}
 
 .noticias > h1{
     font-size: 1.7em;
