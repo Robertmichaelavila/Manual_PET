@@ -15,55 +15,11 @@
 }
 
 html,body{
+    height: 100vh;
     background-color: var(--cor-primary);
     font-family: var(--font-family);
 }
 
-nav{
-    display: flex;
-    padding: 5px;
-    background-color: #000;
-    justify-content: space-between;
-}
-
-span{
-    color: #04B2D9;
-}
-
-nav > div{
-    display: flex;
-    color: #ffffff;
-}
-
-nav > div > p{
-    font-size: 1.2em;
-    font-weight: 500;
-    margin-top: 13px;
-}
-
-nav > menu{
-    margin-top: 15px;
-    padding-right: 10px;
-}
-
-nav > menu > a{
-    font-size: 1.1em;
-    font-weight: 500;
-    text-decoration: none;
-    color: #fff;
-    margin: 0px 10px;
-}
-
-nav > menu > a:hover{
-    color: #04B2D9;
-    font-weight: 00;
-    transition-duration: .2s;
-}
-
-nav > div> img{
-    padding-left: 20px;
-    width: 50px;
-}
 
 .noticias > h1{
     font-size: 1.7em;
@@ -73,15 +29,19 @@ nav > div> img{
 }
 
 .atualizacao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+    width: 100%;
     margin: 50px 0;
+    box-sizing: border-box;
+    align-self: center;
+    justify-content: center;
+
+    display: grid;
+    gap: 40px;
+
+    grid-template-columns: 200px 200px 200px 200px 200px;
 }
 
 .atualizacao > div{
-    margin: 0 40px;
     background-color: #fff;
     text-align: center;
     border-radius: 25px;
@@ -98,7 +58,7 @@ nav > div> img{
 .informacoes{
     color: #fff;
     width: 100%;
-    padding: 20px;
+    margin: 50px 0;
     box-sizing: border-box;
     align-self: center;
     justify-content: center;
@@ -109,13 +69,13 @@ nav > div> img{
     grid-template-columns: 200px 200px 200px 200px;
 }
 
-.informacoes > div{   
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.informacoes > div{  
+    padding-top: 10px;
+    text-align: center;
     border-radius: 20px;
     cursor: pointer;
     background-color: var(--cor-secundary);
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.24);
 }
 
 .informacoes > div:hover{
@@ -126,10 +86,9 @@ nav > div> img{
     box-shadow: 4px 4px 8px 1px #000000ab;
 }
 
-.informacoes  div  p{
+.informacoes > div > p{
     font-size: 1.2em;
     font-weight: 500;
-    padding: 15px;
 }
 
 .equipe{
@@ -199,14 +158,13 @@ footer > ul > li{
 
 footer > ul > li > a{
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 500;
     color: #fff;
     text-decoration: none;
 }
 
 footer > ul > li > a:hover{
     color: #04B2D9;
-    font-weight: 500;
     transition-duration: .2s;
 }
 
