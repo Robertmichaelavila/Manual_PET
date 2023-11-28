@@ -38,24 +38,6 @@
     </div>
 </nav>
 
-      <!-- carousel swiper 
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./_imagens/foto_pet.jpeg" alt="" class="slide"></div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>-->
-
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -83,30 +65,56 @@
     </button>
   </div>
 
+  <section class="slider_container">
+    <div class="container">
+        <div class="swiper card_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img_box">
+                    <img src="./_imagens/UFC.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                    <img src="./_imagens/UFC.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                    <img src="./_imagens/UFC.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                    <img src="./_imagens/UFC.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                    <img src="./_imagens/UFC.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                    <img src="./_imagens/UFC.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                    <img src="./_imagens/UFC.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+      </div>
+  </section>
+
+
     <section class="noticias">
         <h1>Notícias e Atualizações</h1>
-        <section class="atualizacao">
-            <div>
-                <img src="./_imagens/UFC.png" alt="">
-                <p>Projetos</p>
-            </div>
-            <div>
-                <img src="./_imagens/UFC.png" alt="">
-                <p>Projetos</p>
-            </div>
-            <div>
-                <img src="./_imagens/UFC.png" alt="">
-                <p>Projetos</p>
-            </div>
-            <div>
-                <img src="./_imagens/UFC.png" alt="">
-                <p>Projetos</p>
-            </div>
-            <div>
-                <img src="./_imagens/UFC.png" alt="">
-                <p>Projetos</p>
-            </div>
-        </section>
         <section class="informacoes">
             <div>
                 <p>Cursos</p>
@@ -123,41 +131,6 @@
         </section>
     </section>
 
-    <section class="equipe">
-        <h1>Equipe PET</h1>
-        <section class="membros">
-            <div class="card">
-                <figure><img src="./_imagens/Adriel Bastos.jpeg" alt=""></figure>
-                <h3>Aluno</h3>
-                <p>Missão</p>
-            </div>
-            <div class="card">
-                <figure><img src="./_imagens/Alekyne Ribeiro.jpeg" alt=""></figure>
-                <h3>Aluno</h3>
-                <p>Missão</p>
-            </div>
-            <div class="card">
-                <figure><img src="./_imagens/Aryely Matos.jpeg" alt=""></figure>
-                <h3>Aluno</h3>
-                <p>Missão</p>
-            </div>
-            <div class="card">           
-                <figure><img src="./_imagens/Bianca Sousa.jpeg" alt=""></figure>
-                <h3>Aluno</h3>
-                <p>Missão</p>
-            </div>
-            <div class="card">
-                <figure><img src="./_imagens/Cauã Brandão.jpeg" alt=""></figure>
-                <h3>Aluno</h3>
-                <p>Missão</p>
-            </div>
-            <div class="card">
-                <figure><img src="./_imagens/Cauã Gomes.jpeg" alt=""></figure>
-                <h3>Aluno</h3>
-                <p>Missão</p>
-            </div>
-        </section>
-    </section>
 
     <footer>
         <ul>
@@ -170,10 +143,13 @@
     </footer>
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
+    var swiper = new Swiper(".card_slider", {
       spaceBetween: 30,
       loop: true,
+      speed: 1000,
+      autoplay: {
+        delay: 2000,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -181,6 +157,20 @@
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 2,
+        }, 
+        768: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
       },
     });
   </script>

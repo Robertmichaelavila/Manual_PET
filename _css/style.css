@@ -31,33 +31,6 @@ span{
     margin: 20px;
 }
 
-.atualizacao{
-    width: 100%;
-    margin: 50px 0;
-    box-sizing: border-box;
-    align-self: center;
-    justify-content: center;
-
-    display: grid;
-    gap: 40px;
-
-    grid-template-columns: 200px 200px 200px 200px 200px;
-}
-
-.atualizacao > div{
-    background-color: #fff;
-    text-align: center;
-    border-radius: 25px;
-    overflow: hidden;
-    padding: 10 0px;
-    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.24);
-}
-
-.atualizacao > div > img{
-    width: 150px;
-    height: 120px;
-}
-
 .informacoes{
     color: #fff;
     width: 100%;
@@ -94,56 +67,6 @@ span{
     font-weight: 500;
 }
 
-.equipe{
-    background-color: #263A74;
-}
-
-.equipe > h1{
-    color: #fff;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.membros{
-    width: 100%;
-    padding: 40px;
-    box-sizing: border-box;
-    align-self: center;
-    justify-content: center;
-
-    display: grid;
-    gap: 40px;
-
-    grid-template-columns: 200px 200px 200px 200px 200px 200px;
-}
-
-.membros > .card{
-    background-color: #f3f3f3;
-    text-align: center;
-    box-shadow: 4px 4px 8px 1px #00000041;
-    border-radius: 25px;
-    overflow: hidden;
-}
-
-.membros > .card > figure{
-    text-align: center;
-    padding: 10px;
-    background-color: #04B2D9;
-}
-
-.membros > .card > figure > img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-}
-
-.membros > .card > h3{
-    padding: 10px 10px 0 10px;
-}
-
-.membros > .card > p{
-    padding: 10px;
-}
 
 footer{
     background-color: #000;
