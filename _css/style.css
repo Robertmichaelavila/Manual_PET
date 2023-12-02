@@ -20,9 +20,84 @@ html,body{
     font-family: var(--font-family);
 }
 
+a.navbar-brand{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+}
+
 span{
     color: #04B2D9;
 }
+
+/*Inicialização do Swiper*/
+
+.img_box img{
+    width: 100%;
+}
+
+.teste{
+    text-align: center;
+    background-color: #263A74;
+    border-radius: 25px 25px 5px 5px;
+    overflow: hidden;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.24);
+}
+
+.teste .pacote{
+    margin: 0;
+    background-color: #263A74;
+}
+
+.teste .texto p{
+    color: #000;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.teste .texto span{
+    color: #263A74;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.texto{
+    padding: 10px 0;
+}
+
+.img_box .teste .pacote img{
+    width: 140px;
+    height: 140px;
+    padding: 10px 0;
+    border-radius: 50%;
+}
+
+.teste .texto{
+    border-radius: 25px 0 0 0;
+    background-color: #fff;
+}
+
+.card_slider{
+    height: 280px;
+}
+
+.slider_container .container{
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+  
+.card_slider{
+    padding: 50px 0;
+}
+
+/*------------------------------*/
 
 .noticias > h1{
     font-size: 1.7em;
