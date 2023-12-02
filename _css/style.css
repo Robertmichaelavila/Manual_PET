@@ -34,6 +34,10 @@ span{
     color: #04B2D9;
 }
 
+.carousel{
+    width: 900px;
+}
+
 /*Inicialização do Swiper*/
 
 .img_box img{
